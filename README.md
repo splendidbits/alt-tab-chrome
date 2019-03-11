@@ -38,10 +38,9 @@ chrome.developerPrivate.updateExtensionCommand({
 
 
 To use a different tab-switching shortcut replace:
-> > keybinding: **Alt**+**Tab**
->
+> keybinding: "**Alt**+**Tab**"
+
 > with your desired shortcut, so `Ctrl+~` will become:
->
-> > keybinding: **Ctrl**+**~**
->
+
+> keybinding: "**Ctrl**+**~**"
 
