@@ -18,9 +18,9 @@ Recent versions of Chrome prevent you from setting reserved key-combinations suc
 
 In order to force Chrome to use a reserved keyboard shortcut, follow these steps after installation.
 
-- Navigate to the alt-tab *extension details* page by navigating to [chrome://extensions/?id=caffjcgoejncklegkijnfdnkdhljgeho](chrome://extensions/?id=caffjcgoejncklegkijnfdnkdhljgeho), *or* `Menu > "More Tools" > "Extensions"`.
+- Navigate to the alt-tab *extension details* page by navigating to [chrome://extensions/?id=caffjcgoejncklegkijnfdnkdhljgeho](chrome://extensions/?id=caffjcgoejncklegkijnfdnkdhljgeho), *or* `Menu` `More Tools` > `Extensions"`.
 
-- Press the ***Details*** button for the alt-tab extension.
+- Press the ***Details*** button for athe alt-tab extension.
 
 - Open the ***Developer Tools*** panel *on the details page* by navigating to `Menu > More Tools > Extensions`.
 
