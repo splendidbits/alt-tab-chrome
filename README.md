@@ -16,15 +16,21 @@ Ensure that the *Developer Mode* switch is set to ***on*** in [*chrome://extensi
 
 ## Post Installation Setup
 
-Recent versions of Chrome prevent you from setting reserved key-combinations such as [**`Alt`**]+[**`Tab`**] or [**`Ctrl`**]+[**`Tab`**]. 
+Recent versions of Chrome prevent you from setting reserved key-combinations such as `[Alt]` +`[Tab]` **or**  `[Ctrl]` + `[Tab]`. 
 
 In order to force Chrome to use a reserved keyboard shortcut, follow these steps after you installation.
 
-- Navigate to the alt-tab *extension details* page by navigating to
-   `Menu` > `More Tools` > `Extensions` > `alt-tab "Details" Button`
+- Open the  ***Chrome Extensions*** page:
+
+   >`Menu`  >  `More Tools`  >  `Extensions`  **then** clicking then `Details` button for alt-tab.
+
+- Navigate to ***Extension Details*** page for alt-tab:
+
+   > Press the `Details` button in the *alt-tab* extension section.
 
 - Open the ***Developer Tools*** panel *on the details page* by navigating to:
-   `Menu` > `More Tools` >`Developer Tools`
+
+   >`Menu`  >  `More Tools`   >  `Developer Tools`
 
 - Press the ***Console*** button in the Tools tab area at the top of the panel.
 
@@ -41,9 +47,9 @@ In order to force Chrome to use a reserved keyboard shortcut, follow these steps
 
 #### Changing the default shortcut keys
 
-To use a different tab-switching shortcut such as [`Ctrl`]+[`Tab`], replace:
+To use a different tab-switching shortcut such as `[Ctrl]`+`[Tab]`, replace:
 
-> `keybinding: :Alt+Tab"`
+> `keybinding: "Alt+Tab"`
 
 with your desired shortcut, will become:
 
