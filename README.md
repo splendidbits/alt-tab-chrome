@@ -1,34 +1,42 @@
-# [⎇] alt-tab-chrome
+# ⎇  alt-tab
 
-An Chrome extension that lets you switch between the <u>current</u> and <u>previously viewed</u> tab, without having to cycle forwards / backwards though every window tab.
+A lightweight Chrome extension that enables fast switching between the <u>*current*</u> and <u>*last viewed*</u> tabs, without having to cycle though every tab in the window.
+
+This a simplified, renamed fork, originally created by [harshayburadkar](<https://github.com/harshayburadkar/clut-chrome-extension>). It removes analytics tracking, and simplifies some code.
 
 
 
-## Installation in Chrome
+## Installation
 
 [![webstore](webstore.png)](https://chrome.google.com/webstore/detail/alt-tab/caffjcgoejncklegkijnfdnkdhljgeho)
 
-You can install the extension from the [Google Web Extensions Store](https://chrome.google.com/webstore/detail/alt-tab/caffjcgoejncklegkijnfdnkdhljgeho). or by cloning this repository and using Chome's Extension Developer Mode to install the unpacked extension directly. 
+######  Easy Install
 
-Ensure that the *Developer Mode* switch is set to ***on*** in [*chrome://extensions*](chrome://extensions).
+You can install the extension from the [Google Web Store](https://chrome.google.com/webstore/detail/alt-tab/caffjcgoejncklegkijnfdnkdhljgeho). 
+
+###### Manual Install
+
+To install from source directly, clone this repository, and in the Chrome *Extensions* screen, first ensure the *Developer Mode* switch is set to ***on***, then select `Load unpack` and navigate to your locally cloned folder.
 
 
 
-## Post Installation Setup
+## Post Installation
 
-Recent versions of Chrome prevent you from setting reserved key-combinations such as [**`Alt`**]+[**`Tab`**] or [**`Ctrl`**]+[**`Tab`**]. 
+Recent versions of Chrome prevent you from setting reserved keyboard bindings such as [**`Alt`**]+[**`Tab`**] or [**`Ctrl`**]+[**`Tab`**]. You can also use multiple shortcut combinations like [**`Cmd`**]+[**`Shift`**]+[**`X`**]
 
 In order to force Chrome to use a reserved keyboard shortcut, follow these steps after you installation.
 
-- Navigate to the alt-tab *extension details* page by navigating to
-   `Menu` > `More Tools` > `Extensions` > `alt-tab "Details" Button`
+1. Open the [Chrome Extensions](chrome://extensions/?id=aeblfdkhhhdcdjpifhhbdiojplfjncoa) page:
 
-- Open the ***Developer Tools*** panel *on the details page* by navigating to:
-   `Menu` > `More Tools` >`Developer Tools`
+   `Menu` > `More Tools` > `Extensions`, and press `Details` on alt-tab.
 
-- Press the ***Console*** button in the Tools tab area at the top of the panel.
+1. Open the ***Developer Tools*** panel on the alt-tab extension page:
 
-- Paste the following snippet into the console:
+   > `Menu` > `More Tools` > `Developer Tools`
+
+1. Select the `Console` tab at the top of the `Developer Tools` panel.
+
+1. Paste the following snippet into the console:
   ```javascript
   chrome.developerPrivate.updateExtensionCommand({
       extensionId: "caffjcgoejncklegkijnfdnkdhljgeho",
@@ -39,13 +47,11 @@ In order to force Chrome to use a reserved keyboard shortcut, follow these steps
 
 
 
-#### Changing the default shortcut keys
+### Changing the default shortcut keys
 
-To use a different tab-switching shortcut such as [`Ctrl`]+[`Tab`], replace:
+To specify your own modify the `keybinding:` property (i.e. [**`⌘`**]+[**`X`**]:
 
-> `keybinding: :Alt+Tab"`
-
-with your desired shortcut, will become:
-
-> `keybinding: "Ctrl+~"`
+   ```javascript
+   keybinding: "Cmd+X"
+   ```
 
