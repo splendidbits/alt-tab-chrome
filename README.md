@@ -12,19 +12,19 @@ Ensure that the *Developer Mode* switch is set to ***on*** in [*chrome://extensi
 
 #### Post instalation (important)
 
-Recent versions of Chrome prevent you from setting reserved key-combinations such as *Alt+Tab*, *Ctrl+~*, etc. 
+Recent versions of Chrome prevent you from setting reserved key-combinations such as `Alt+Tab` or `Ctrl+~`.
 
 In order to force Chrome to use a reserved keyboard shortcut, follow these steps after you installation.
 
-*1)*  Navigate to the alt-tab *extension details* page by navigating to [chrome://extensions/?id=caffjcgoejncklegkijnfdnkdhljgeho](chrome://extensions/?id=caffjcgoejncklegkijnfdnkdhljgeho), *or* `Menu > "More Tools" > "Extensions"`.
+- Navigate to the alt-tab *extension details* page by navigating to [chrome://extensions/?id=caffjcgoejncklegkijnfdnkdhljgeho](chrome://extensions/?id=caffjcgoejncklegkijnfdnkdhljgeho), *or* `Menu > "More Tools" > "Extensions"`.
 
-*2)*  Press the ***Details*** button for the alt-tab extension.
+- Press the ***Details*** button for the alt-tab extension.
 
-*3)*  Open the ***Developer Tools*** panel *on the details page* by navigating to `Menu > More Tools > Extensions`.
+- Open the ***Developer Tools*** panel *on the details page* by navigating to `Menu > More Tools > Extensions`.
 
-*4)*  Press the *Console* button in the Tools tab area at the top of the panel.
+- Press the *Console* button in the Tools tab area at the top of the panel.
 
-*5)*  Paste the snippet into the console:
+- Paste the snippet into the console:
 
 ```javascript
 chrome.developerPrivate.updateExtensionCommand({
