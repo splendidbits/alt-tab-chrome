@@ -1,8 +1,10 @@
 # [⎇] alt-tab-chrome
 
-An extension for Google Chrome that lets you switch between the *current* and *previously seen* tabs, without having to cycle forwards or backwards though all open tabs in the window.
+An Chrome extension that lets you switch between the <u>current</u> and <u>previously viewed</u> tab, without having to cycle forwards / backwards though every window tab.
 
-## Installation
+
+
+## Installation in Chrome
 
 [![webstore](webstore.png)](https://chrome.google.com/webstore/detail/alt-tab/caffjcgoejncklegkijnfdnkdhljgeho)
 
@@ -12,35 +14,38 @@ Ensure that the *Developer Mode* switch is set to ***on*** in [*chrome://extensi
 
 
 
-## Post instalation (important)
+## Post Installation Setup
 
-Recent versions of Chrome prevent you from setting reserved key-combinations such as `Alt+Tab` or `Ctrl+~`.
+Recent versions of Chrome prevent you from setting reserved key-combinations such as [**`Alt`**]+[**`Tab`**] or [**`Ctrl`**]+[**`Tab`**]. 
 
-In order to force Chrome to use a reserved keyboard shortcut, follow these steps after installation.
+In order to force Chrome to use a reserved keyboard shortcut, follow these steps after you installation.
 
-- Navigate to the alt-tab *extension details* page by navigating to [chrome://extensions/?id=caffjcgoejncklegkijnfdnkdhljgeho](chrome://extensions/?id=caffjcgoejncklegkijnfdnkdhljgeho), *or* `Menu` `More Tools` > `Extensions"`.
+- Navigate to the alt-tab *extension details* page by navigating to
+   `Menu` > `More Tools` > `Extensions` > `alt-tab "Details" Button`
 
-- Press the ***Details*** button for athe alt-tab extension.
+- Open the ***Developer Tools*** panel *on the details page* by navigating to:
+   `Menu` > `More Tools` >`Developer Tools`
 
-- Open the ***Developer Tools*** panel *on the details page* by navigating to `Menu > More Tools > Extensions`.
+- Press the ***Console*** button in the Tools tab area at the top of the panel.
 
-- Press the *Console* button in the Tools tab area at the top of the panel.
-
-- Paste the snippet into the console:
-
-```javascript
-chrome.developerPrivate.updateExtensionCommand({
-    extensionId: "caffjcgoejncklegkijnfdnkdhljgeho",
-    commandName: "alt_switch_fast",
-    keybinding: "Alt+Tab"
-});
-```
+- Paste the following snippet into the console:
+  ```javascript
+  chrome.developerPrivate.updateExtensionCommand({
+      extensionId: "caffjcgoejncklegkijnfdnkdhljgeho",
+      commandName: "alt_switch_fast",
+      keybinding: "Alt+Tab"
+  });
+  ```
 
 
-To use a different tab-switching shortcut replace:
-> keybinding: "**Alt**+**Tab**"
 
-with your desired shortcut, so `Ctrl+~` will become:
+#### Changing the default shortcut keys
 
-> keybinding: "**Ctrl**+**~**"
+To use a different tab-switching shortcut such as [`Ctrl`]+[`Tab`], replace:
+
+> `keybinding: :Alt+Tab"`
+
+with your desired shortcut, will become:
+
+> `keybinding: "Ctrl+~"`
 
