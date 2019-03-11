@@ -2,7 +2,7 @@
 
 A lightweight Chrome extension that enables fast switching between the <u>*current*</u> and <u>*last viewed*</u> tabs, without having to cycle though every tab in the window.
 
-This a simplified, renamed fork, originally created by [harshayburadkar](<https://github.com/harshayburadkar/clut-chrome-extension>). It removes analytics tracking, and simplifies some code.
+This a simplified fork originally created by [harshayburadkar](<https://github.com/harshayburadkar/clut-chrome-extension>). It removes analytics tracking, and simplifies some code. It is distributed under the MIT license.
 
 
 
@@ -47,7 +47,7 @@ In order to force Chrome to use a reserved keyboard shortcut, follow these steps
 
 
 
-### Changing the default shortcut keys
+#### Changing the default shortcut keys
 
 To specify your own modify the `keybinding:` property (i.e. [**`⌘`**]+[**`X`**]:
 
