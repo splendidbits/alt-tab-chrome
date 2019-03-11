@@ -1,4 +1,6 @@
-## [⎇] alt-tab Chrome Extension
+## [⎇] alt-tab-chrome
+
+An extension for Google Chrome that lets you switch between the *current* and *previously seen* tabs, without having to cycle forwards or backwards though all open tabs in the window.
 
 ### Installation
 
