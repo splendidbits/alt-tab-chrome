@@ -1,6 +1,6 @@
 ## [⎇] alt-tab Chrome Extension
 
-#### Installation
+### Installation
 
 [![webstore](webstore.png)](https://chrome.google.com/webstore/detail/alt-tab/caffjcgoejncklegkijnfdnkdhljgeho)
 
@@ -10,7 +10,7 @@ Ensure that the *Developer Mode* switch is set to ***on*** in [*chrome://extensi
 
 
 
-#### Post instalation (important)
+### Post instalation (important)
 
 Recent versions of Chrome prevent you from setting reserved key-combinations such as `Alt+Tab` or `Ctrl+~`.
 
