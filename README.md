@@ -30,7 +30,7 @@ In order to force Chrome to use a reserved keyboard shortcut, follow these steps
 chrome.developerPrivate.updateExtensionCommand({
     extensionId: "caffjcgoejncklegkijnfdnkdhljgeho",
     commandName: "alt_switch_fast",
-    keybinding: "*Alt+Tab"
+    keybinding: "Alt+Tab"
 });
 ```
 
